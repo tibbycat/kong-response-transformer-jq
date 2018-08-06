@@ -1,8 +1,8 @@
 # kong-response-transformer-jq
 jq response transformer for kong
 ## Prerequisites
-Kong 0.12, or 0.14
-Requires lua-jq which you can get from https://github.com/tibbycat/lua-jq
+1. Kong 0.12, or 0.14
+2. Requires lua-jq which you can get from https://github.com/tibbycat/lua-jq
 ## Installing
 Install response-transformer-jq
 ```
