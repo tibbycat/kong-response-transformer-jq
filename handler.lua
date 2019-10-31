@@ -19,6 +19,11 @@ function ResponseTransformerHandlerJq:access(conf)
   ctx.rt_body_chunk_number = 1
 end
 
+function ResponseTransformerHandlerJq:header_filter(conf)
+  ResponseTransformerHandlerJq.super.header_filter(self)
+  ngx.header["content-length"] = nil
+end
+
 function ResponseTransformerHandlerJq:body_filter(conf)
   ResponseTransformerHandlerJq.super.body_filter(self)
 
